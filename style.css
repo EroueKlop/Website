@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'windows-xp'; /* Name your font family */
+    src: url('fonts/windows-xp-tahoma.ttf'); /* Locate the .ttf file within your directory*/
+}
+
+body {
+    color: #ffff;
+    font-family: 'windows-xp', sans-serif; /* Use the font family */
+    background: url("img/bg.gif")  fixed;
+}
+
+body p{
+    font-size:18px;
+}
+
+.header{
+    padding: 30px;
+}
+
+.header img{
+    
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.bumper {
+    padding-top: 30px;
+    float: right;
+    
+}
+
+.bumper img{
+    display: block;
+}
+
+.sidebar{
+    background-color: black;
+    text-align: center;
+    border: solid #36454F;
+    float: right;
+    margin-right: 10px;
+}
+
+.sidebar img{
+    text-align:center;
+    size: 30%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.sidebar img:hover{
+    transform: scale(1.5);
+}
+
+.sidebar h1{
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.links{
+    text-align:center;
+    margin-left: 10px;
+    float: left;
+    border: solid #36454F;
+    background-color:black;
+}
+
+
+.links img{
+    margin-left: 10px;
+    padding: 10px;
+    display:block;
+    transition: transform 0.2s;
+}
+
+.links img:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.links h1{
+    font-size: 30px;
+    text-decoration: underline;
+    text-align:center;
+}
+
+.player{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.player:hover{
+    cursor: pointer;
+}
+
+.main {
+    border: solid #36454F;
+    max-width: stretch;
+    margin-left:130px;
+    margin-right:140px;
+    text-align:left;
+    padding: 10px;
+    background-color: black;
+}
+
+.main h1{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.pet iframe {
+    padding: 10px;
+    text-align: left;
+}
+
+
+.main p{
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.donate {
+    float: right;
+    padding: 10px;
+}
+
+.gallery{
+    padding: 60px;
+    width:100wh;
+    height:100vh;
+    text-align: center;
+}
+
+.donate:hover{
+    cursor: pointer;
+}
+
+.footer {
+    padding-top : 50px;
+    text-align: center;
+}
+
+.footer img {
+    padding: 10px;
+}
+
+@media(orientation: portrait) { 
+     .links, .sidebar{
+	 margin: auto; 
+ 	padding: auto;
+	
+     }
+ 
+     .main {
+	 float: left;
+	 padding: 10px;
+	 position: relative;
+	 top: -240px;
+     }
+     
+     .pet {
+	 position:relative;
+	 top: -130px;
+     }
+
+     .player{
+	 padding: 10px;
+     }
+} 
