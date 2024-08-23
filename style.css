@@ -120,12 +120,7 @@ body p{
 
 .main p{
     text-align: left;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.donate {
-    float: right;
+    font-size: 25px;
     padding: 10px;
 }
 
@@ -134,6 +129,99 @@ body p{
     width:100wh;
     height:100vh;
     text-align: center;
+}
+
+.contact{
+    font-size: 22px;
+    padding: 130px;
+    width:100wh;
+    height:100vh;
+    text-align: center;
+}
+
+.donate{
+    float:right;
+    padding:10px;
+}
+
+.donation{
+    font-size: 23px;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+    border: solid #36454F;
+    word-break: break-all;
+}
+
+
+.donation p{
+    font-size: 22px;
+}
+
+.about{
+    border: solid #36454F;
+    font-size: 22px;
+    margin-left:50px;
+    margin-right:180px;
+    bottom: -130px;
+    position:relative;
+    padding:20px;
+    background-color:black;
+    text-align: left;
+}
+
+.about p{
+    font-size: 28px;
+}
+
+.movies{
+    border: solid #36454F;
+    font-size: 22px;
+    margin-left:50px;
+    margin-right:180px;
+    margin-top: 25px;
+    padding:20px;
+    background-color:black;
+    text-align: left;
+    position:relative;
+    bottom: -130px;
+}
+
+
+.software{
+    border: solid #36454F;
+    font-size: 22px;
+    margin-left:50px;
+    margin-right:180px;
+    margin-top: 25px;
+    padding:20px;
+    background-color:black;
+    text-align: left;
+    position:relative;
+    bottom: -130px;
+}
+
+.projects{
+    padding: 60px;
+    width:100wh;
+    height:100vh;
+    text-align: center;
+}
+
+.hobbies{
+    padding: 60px;
+    width:100wh;
+    height:100vh;
+    text-align: center;
+}
+
+.contact p{
+    font-size: 26px;
+}
+
+.back{
+    float: left;
+    padding: 20px;
 }
 
 .donate:hover{

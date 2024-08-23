@@ -2,11 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>gallery</title>
+    <title>Gallery</title>
+    <meta name="author" content="vrahj">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../img/favicon.ico">
     <link href="../style.css" rel="stylesheet">
-    <style>
+77777777777777777777777777777777777777777777777777777777    <style>
       .back{
 	  padding: 20px;
       }
