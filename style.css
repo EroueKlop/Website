@@ -17,16 +17,6 @@ body p{
     padding: 30px;
 }
 
-.header img{
-    
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
-
 .bumper {
     padding-top: 30px;
     float: right;
@@ -111,12 +101,6 @@ body p{
     font-size: 30px;
     text-decoration: underline;
 }
-
-.pet iframe {
-    padding: 10px;
-    text-align: left;
-}
-
 
 .main p{
     text-align: left;
@@ -237,26 +221,43 @@ body p{
     padding: 10px;
 }
 
-@media(orientation: portrait) { 
-     .links, .sidebar{
-	 margin: auto; 
- 	padding: auto;
-	
+ @media(orientation: portrait) {
+     .links img, .sidebar img{
+	 margin: auto;
+ 	 padding: auto;
+	 display:inline;
+     }
+
+     .sidebar{
+	  margin: 10px;
      }
  
      .main {
-	 float: left;
 	 padding: 10px;
 	 position: relative;
-	 top: -240px;
-     }
-     
-     .pet {
-	 position:relative;
-	 top: -130px;
+	 bottom: -40px;
+	 left: 110px;
+	 width: 80%;
+	 float:right;
      }
 
-     .player{
+     .donate{
+	 margin: 60px;
+     }
+     
+     .footer {
+	 display:inline-block;
+	 position: relative;
+	 padding-top : 50px;
+	 text-align: center;
+     }
+     
+     .footer img {
 	 padding: 10px;
      }
-} 
+
+ }
+/*      .player{ */
+/* 	 padding: 10px; */
+/*      } */
+/* }  */
