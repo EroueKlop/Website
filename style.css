@@ -33,6 +33,12 @@ body p{
     border: solid #36454F;
     float: right;
     margin-right: 10px;
+    word-break: break-word;
+    width: 115px;
+    height:280px;
+    overflow: scroll;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x:hidden;
 }
 
 .sidebar img{
@@ -78,14 +84,14 @@ body p{
     text-align:center;
 }
 
-.player{
-    margin-right: 10px;
-    margin-top: 10px;
-}
+/* .player{ */
+/*     margin-right: 10px; */
+/*     margin-top: 10px; */
+/* } */
 
-.player:hover{
-    cursor: pointer;
-}
+/* .player:hover{ */
+/*     cursor: pointer; */
+/* } */
 
 .main {
     border: solid #36454F;
@@ -118,9 +124,13 @@ body p{
 .contact{
     font-size: 22px;
     padding: 130px;
-    width:100wh;
-    height:100vh;
+    width:auto;
+    /* height:100vh */;
     text-align: center;
+}
+
+.contact img{
+    
 }
 
 .donate{
@@ -142,10 +152,8 @@ body p{
 .about{
     border: solid #36454F;
     font-size: 22px;
-    margin-left:50px;
-    margin-right:180px;
-    bottom: -100px;
-    position:relative;
+    float:left;
+    margin:20px;
     padding:20px;
     background-color:black;
     text-align: left;
@@ -158,28 +166,21 @@ body p{
 .movies{
     border: solid #36454F;
     font-size: 22px;
-    margin-left:50px;
-    margin-right:180px;
-    margin-top: 25px;
+    float:left;
+    margin:20px;
     padding:20px;
     background-color:black;
     text-align: left;
-    position:relative;
-    bottom: -130px;
 }
 
 
 .software{
     border: solid #36454F;
     font-size: 22px;
-    margin-left:50px;
-    margin-right:180px;
-    margin-top: 25px;
     padding:20px;
     background-color:black;
+    float:center;
     text-align: left;
-    position:relative;
-    bottom: -130px;
 }
 
 .software p{
@@ -190,23 +191,44 @@ body p{
 .hobbies{
     border: solid #36454F;
     font-size: 22px;
-    margin-left:50px;
-    margin-right:180px;
-    margin-top: 25px;
+    float:left;
+    margin:20px;
     padding:20px;
     background-color:black;
     text-align: left;
-    position:relative;
-    bottom: -130px;
 }
 
 .projects{
-    padding: 60px;
-    width:100wh;
-    height:100vh;
+    text-align:left;
+    padding-left:70px;
+    margin: 20px;
 }
 
-.projects #tux{
+.projects a{
+    color:#ffff;
+    transition: font-size 0.2s;	
+}
+
+.projects a:hover{
+    font-size:110%;
+}
+
+.projects z{
+    height:60px;
+    width:auto;
+}
+
+.projects img{
+    position:relative;
+    left:30%;
+}
+
+.projects-head{
+    padding: 60px;
+    width:100wh;
+}
+
+.projects-head #tux{
     display:block;
     margin-left: auto;
     margin-right: auto;
@@ -217,6 +239,23 @@ body p{
     width:100wh;
     height:100vh;
     text-align:center;
+}
+
+.blog img{
+    height:100px;
+    width:auto;
+}
+
+.gallery{
+    padding: 60px;
+    width:100wh;
+    height:100vh;
+    text-align:center;
+}
+
+.gallery img{
+    height:100px;
+    width:auto;
 }
 
 .contact p{
@@ -261,10 +300,16 @@ body p{
 	 float:right;
      }
 
+     .contact img{
+	 margin-left: auto;
+	 margin-right: auto;
+	 width: 250%;
+     }
+     
      .about{
 	 display:inline-block;
      }
-
+     
      .software{
 	 display: inline-block;
      }
@@ -273,13 +318,17 @@ body p{
 	 display:inline-block;
      }
 
+     .hobbies{
+	 display:inline-block;
+     }
+
      .movies img{
-	 height: 100px;
+	 height: 70px;
 	 width:auto;
      }
 
      .hobbies img{
-	 height: 100px;
+	 height: 70px;
 	 width:auto;
      }
      
