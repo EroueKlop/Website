@@ -1,0 +1,72 @@
+* a{
+  color:purple;
+}
+
+
+@font-face {
+    font-family: 'windows-xp'; /* Name your font family */
+    src: url('fonts/windows-xp-tahoma.ttf'); /* Locate the .ttf file within your directory*/
+}
+
+body {
+    color: #ffff;
+    font-family: 'windows-xp', sans-serif; /* Use the font family */
+    background: url("img/bg2.gif")  fixed;
+}
+
+.main {
+    padding: 10px;
+}
+
+.main{
+    font-size: 30px;
+}
+
+.main h1{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.main #blink {
+    font-size: 30px;
+    animation: rotation 1s infinite linear;
+    text-decoration: underline;
+}
+
+@keyframes rotation { /* Corrected keyframe declaration */
+    from {
+	color:red;
+        transform: rotate(0deg);
+    }
+    to {
+	color: green;
+        transform: rotate(0deg);
+    }
+}
+
+.main p {
+    text-align: left;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.fuckingpig{
+    text-align:right;
+}
+
+.links{
+    padding: 90px;
+}
+
+
+.links img{
+    margin-left: 10px;
+    padding: 30px;
+    display:inline;
+    transition: transform 0.2s;
+}
+
+.links img:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}

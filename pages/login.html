@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+</head>
+
+<body>
+  <a href="../index.html">
+    <img src="../img/back.gif"/>
+  </a>
+  <form id="login-form">
+        <label for="username">Login:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <button type="button" id="login-form-submit">Enter <img src="../img/penguin.gif" alt="Penguin"/></button>
+        <p id="login-error-msg" style="color: red;"></p>
+    </form> 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const loginForm = document.getElementById("login-form");
+            const loginButton = document.getElementById("login-form-submit");
+            const loginErrorMsg = document.getElementById("login-error-msg");
+
+            loginButton.addEventListener("click", (e) => {
+                e.preventDefault();
+                const username = loginForm.username.value;
+                const password = loginForm.password.value;
+
+                if (username === "" && password === "") {
+                    location.replace("./goofyahhstupidman:):).html");
+                } else {
+                    loginErrorMsg.textContent = "wrong login credentials";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
